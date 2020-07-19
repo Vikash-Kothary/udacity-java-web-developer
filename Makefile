@@ -4,7 +4,7 @@ UDACITY_JDND_NAME ?= "JDND"
 UDACITY_JDND_VERSION ?= "v0.1.0"
 UDACITY_JDND_DESCRIPTION ?= "Udacity Java Web Developer Nanodegree Program"
 ENV ?= local
--include .env.${ENV}
+-include config/.env.${ENV}
 export
 
 
