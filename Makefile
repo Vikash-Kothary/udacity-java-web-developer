@@ -3,6 +3,10 @@
 UDACITY_JDND_NAME ?= "JDND"
 UDACITY_JDND_VERSION ?= "v0.1.0"
 UDACITY_JDND_DESCRIPTION ?= "Udacity Java Web Developer Nanodegree Program"
+ENV ?= local
+-include .env.${ENV}
+export
+
 
 .DEFAULT_GOAL := help
 .PHONY: help #: Display a list of command and exit.
