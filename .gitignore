@@ -1,8 +1,8 @@
 config/*
 !config/.env.example
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,intellij+all,java,java-web,maven
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,intellij+all,java,java-web,maven
+# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,intellij+all,java,java-web,maven,jenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,intellij+all,java,java-web,maven,jenv
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -122,6 +122,13 @@ hs_err_pid*
 ## ignoring target file
 target/
 
+### JEnv ###
+# JEnv local Java version configuration file
+.java-version
+
+# Used by previous versions of JEnv
+.jenv-version
+
 ### Linux ###
 *~
 
@@ -203,4 +210,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,intellij+all,java,java-web,maven
+# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,intellij+all,java,java-web,maven,jenv
