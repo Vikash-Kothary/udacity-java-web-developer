@@ -17,6 +17,11 @@ init: init-. # Default to current directory
 init-%:
 	@${MVN} -f ${*}/pom.xml initialize
 
+.PHONY: docs #: Run documentation.
+init: init-. # Default to current directory
+docs-%: clean-%
+	@${MVN} -f ${*}/pom.xml site:run
+
 .PHONY: tests #: Run tests.
 tests: test-. # Default to current directory
 test-%:
